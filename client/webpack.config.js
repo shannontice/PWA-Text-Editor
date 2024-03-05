@@ -16,20 +16,15 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
+        title: "Jate",
         template: './index.html',
-        filename: 'index.html',
-        chunks: ['main']
-      }),
-      new HtmlWebpackPlugin({
-        template: './install.html',
-        filename: 'install.html',
-        chunks: ['install'],
+      
       }),
       new WebpackPwaManifest ({
         name: 'PWA Text Editor',
         short_name: 'PWA Text',
         description: 'App to create notes with or without internet connection',
-        background_color: '##FCFFFD',
+        background_color: '#FCFFFD',
         theme_color: '#DAFFEF',
         icons: [{
           src: path.resolve('src/images/logo.png'),
@@ -39,8 +34,7 @@ module.exports = () => {
       }),
 
       new InjectManifest ({
-        swSrc: './src/sw.js',
-        swDest: 'sw.js'
+        swSrc: './src-sw.js'
       })
     ],
 
