@@ -11,5 +11,4 @@ Link to deployed code: https://github.com/shannontice/PWA-Text-Editor
 -The style and css loaders used allow the CSS files created to be imported into the JavaScript files written for this text editor.
 -Babel-loader allows for the Javascript written to be compatible with users who are running this application on older browsers so that the code does not break. 
 
-
 ## Mock-Up
